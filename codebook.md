@@ -28,7 +28,7 @@ The steps taken to create the tidy file are as follows:
 2. Change your working directory to the data folder by issuing the following command in RStudio:  
 ```{r, eval=FALSE}
 setwd("UCI HAR Dataset/")
-```  
+```
 3. Run the script run_analysis.R in this directory  
 4. Issue the following command to create the tidy data set file in your working directory:  
 ```{r, eval=FALSE}
@@ -47,9 +47,9 @@ For each of the training and test data, it then
 
 It then merges the training and test data sets and filters the columns of the combined dataset so that only those column names with mean() and std() functions remain. It also edits these variable names to make sure they are readable.
 
-Finally, the script groups the data by activity and by subject and summarises by calculating the mean of each varible for each activity and subject.
+Finally, the script groups the data by activity and by subject and summarises by calculating the mean of each variable for each activity and subject.
 
-The README.md file contains a detailed description of these steps.
+The [README.md](https://github.com/twinhype/gettingcleandataproject/blob/master/README.md) file contains a detailed description of these steps.
 
 ##Description of the variables in the twinhypeactdata.txt file
 The file contains a tidy set of 180 observations of 68 variables

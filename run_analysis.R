@@ -44,13 +44,12 @@ traintest <- rbind(xtrain3, xtest3)
 
 ## extract mean and stddev variables
 actsub <- traintest[,1:2]
-meanstdtraintest <- traintest[, union(grep("mean()", colnames(traintest)[3:563], fixed = TRUE, value = TRUE),grep("std()", colnames(traintest)[3:563], fixed = TRUE, value = TRUE))]
+meanstdtraintest <- traintest[, union(grep("mean()", colnames(traintest), fixed = TRUE, value = TRUE),grep("std()", colnames(traintest), fixed = TRUE, value = TRUE))]
 meanstdtraintest <- cbind(actsub, meanstdtraintest)
 
 ## edit variable names 
 newcols <- gsub("BodyBody", "Body", colnames(meanstdtraintest))
 newcols <- gsub("\\()|\\(|\\)|-", "", newcols)
-newcols <- gsub(",", "and", newcols)
 colnames(meanstdtraintest)<-newcols
 
 ## group by activity and subject
