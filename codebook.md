@@ -13,7 +13,7 @@ This project prepares a tidy data set from a set of experimental measurement dat
 ##Study design and data processing
 
 ###Collection of the raw data
-The data for the project was collected from embedded accelerometer and gyroscope readings on Samsung Galaxy SII smartphones worn on the waist of the 30 volunteers. The project data was downloaded from the link
+The data for the project was collected from embedded accelerometer and gyroscope readings on Samsung Galaxy SII smartphones worn on the waist of the 30 volunteers. A full description of the data is available at the link [Human Activity Recognition Using Smartphones Data Set] (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones). The project data was downloaded from the link
 (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 and extracted into the working directory of RStudio.
 
@@ -24,13 +24,13 @@ There was an error in some of the feature variable names, where the word "Body" 
 
 ###Guide to create the tidy data file  
 The steps taken to create the tidy file are as follows:  
-1. Download the data and extract it to your working directory  
-2. Change your working directory to the data folder by issuing the following command in RStudio:  
+* Download the data and extract it to your working directory  
+* Change your working directory to the data folder by issuing the following command in RStudio:  
 ```{r, eval=FALSE}
 setwd("UCI HAR Dataset/")
 ```
-3. Run the script run_analysis.R in this directory  
-4. Issue the following command to create the tidy data set file in your working directory:  
+* Run the script run_analysis.R in this directory  
+* Issue the following command to create the tidy data set file in your working directory:  
 ```{r, eval=FALSE}
 write.table(summarisedset, file = "./twinhypeactdata.txt", quote = FALSE, row.names = FALSE)
 ```  
