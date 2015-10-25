@@ -43,7 +43,9 @@ colnames(xtest3)[1] <- "activity"
 traintest <- rbind(xtrain3, xtest3)
 
 ## extract mean and stddev variables
-meanstdtraintest <- traintest[, grepl("mean\\()|std\\()", colnames(traintest)[3:563], ignore.case = TRUE)]
+actsub <- traintest[,1:2]
+meanstdtraintest <- traintest[, union(grep("mean()", colnames(traintest)[3:563], fixed = TRUE, value = TRUE),grep("std()", colnames(traintest)[3:563], fixed = TRUE, value = TRUE))]
+meanstdtraintest <- cbind(actsub, meanstdtraintest)
 
 ## edit variable names 
 newcols <- gsub("BodyBody", "Body", colnames(meanstdtraintest))
@@ -55,5 +57,3 @@ colnames(meanstdtraintest)<-newcols
 groupedset <- group_by(meanstdtraintest, activity, subject)
 ## summarise - get average of each variable by activity and by subject
 summarisedset <- summarise_each(groupedset, funs(mean))
-
-summarisedset

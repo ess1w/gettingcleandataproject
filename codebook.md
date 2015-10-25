@@ -49,6 +49,7 @@ The README.md file contains a detailed description of these steps.
 
 ##Description of the variables in the twinhypeactdata.txt file
 The file contains a tidy set of 180 observations of 68 variables
+
 Variable Name		| Description
 --------------------| ----------------------------------------------------------------------	
 activity			| The activity the volunteer performed while the measurements were taken
