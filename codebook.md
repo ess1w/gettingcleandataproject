@@ -22,14 +22,18 @@ There was an error in some of the feature variable names, where the word "Body" 
 
 ##Creating the tidy datafile
 
-###Guide to create the tidy data file
-The steps taken to create the tidy file are as follows:
-1. Download the data and extract it to your working directory
-2. Change your working directory to the data folder by issuing the following command in RStudio:
+###Guide to create the tidy data file  
+The steps taken to create the tidy file are as follows:  
+1. Download the data and extract it to your working directory  
+2. Change your working directory to the data folder by issuing the following command in RStudio:  
+```{r, eval=FALSE}
 setwd("UCI HAR Dataset/")
-3. Run the script run_analysis.R in this directory
-4. Issue the following command to create the tidy data set file in your working directory:
+```  
+3. Run the script run_analysis.R in this directory  
+4. Issue the following command to create the tidy data set file in your working directory:  
+```{r, eval=FALSE}
 write.table(summarisedset, file = "./twinhypeactdata.txt", quote = FALSE, row.names = FALSE)
+```  
 
 ###Cleaning of the data
 The script starts by reading in the training and test data measurements into two separate data frames, and reading the list of features from the features.txt file and assigning these as the column names of the two data frames.
@@ -126,7 +130,7 @@ fBodyGyroJerkMagstd	| Standard deviation of the magnitude of body angular veloci
 Each value in the tidy data set represents the average of the respective variable for each activity and each subject.
 
 ####Class of the variable
-Each variable is numeric
+Each variable is numeric.
 
 ####Unit of measurement 
 The values are all averages and therefore have no unit of measurement.

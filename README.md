@@ -2,8 +2,10 @@
 This file describes how the script for the course project in Getting and Cleaning Data works.
 
 ## Unpacking the files
-The data for this project is contained in 8 text files. The files are all contained in the folder "UCI HAR Dataset", so this folder should be extracted into your working directory. You should then change your working directory to this folder with the command:
+The data for this project is contained in 8 text files. The files are all contained in the folder "UCI HAR Dataset", so this folder should be extracted into your working directory. You should then change your working directory to this folder with the command:  
+```{r, eval=FALSE}
 setwd("UCI HAR Dataset/")
+```  
 
 ## run_analysis.R
 The script starts by reading in the training and test data measurements into two variables, xtrain and xtest.
@@ -35,6 +37,7 @@ Finally, the script groups the data by activity and by subject (using the group_
 It generates a tidy data set that meets the principles of tidy data as described in the link above.
 
 ## Reading in the tidy data output
-The tidy data output can be read by copying the file into your working directory and issuing the following command:
+The tidy data output can be read by copying the file into your working directory and issuing the following command:  
+```{r, eval=FALSE}
 output <- read.table("./twinhypeactdata.txt", header = TRUE)
-
+```
