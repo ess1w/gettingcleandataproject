@@ -49,10 +49,77 @@ The README.md file contains a detailed description of these steps.
 
 ##Description of the variables in the twinhypeactdata.txt file
 The file contains a tidy set of 180 observations of 68 variables
- - Summary of the data
- - Variables present in the dataset
+Variable Name		| Description
+--------------------| ----------------------------------------------------------------------	
+activity			| The activity the volunteer performed while the measurements were taken
+subject				| Represents the volunteer for whom the measurements were taken
+tBodyAccmeanX		| Mean of body acceleration time domain signal, X axis
+tBodyAccmeanY		| Mean of body acceleration time domain signal, Y axis
+tBodyAccmeanZ		| Mean of body acceleration time domain signal, Z axis
+tGravityAccmeanX	| Mean of gravity acceleration time domain signal, X axis
+tGravityAccmeanY	| Mean of gravity acceleration time domain signal, Y axis
+tGravityAccmeanZ	| Mean of gravity acceleration time domain signal, Z axis
+tBodyAccJerkmeanX 	| Mean of body acceleration time domain jerk signal, X axis
+tBodyAccJerkmeanY 	| Mean of body acceleration time domain jerk signal, Y axis
+tBodyAccJerkmeanZ 	| Mean of body acceleration time domain jerk signal, Z axis
+tBodyGyromeanX 		| Mean of body angular velocity time domain signal, X axis
+tBodyGyromeanY 		| Mean of body angular velocity time domain signal, Y axis
+tBodyGyromeanZ 		| Mean of body angular velocity time domain signal, Z axis
+tBodyGyroJerkmeanX 	| Mean of body angular velocity time domain jerk signal, X axis
+tBodyGyroJerkmeanY 	| Mean of body angular velocity time domain jerk signal, Y axis
+tBodyGyroJerkmeanZ 	| Mean of body angular velocity time domain jerk signal, Z axis
+tBodyAccMagmean 	| Mean of the magnitude of body acceleration time domain signals
+tGravityAccMagmean 	| Mean of the magnitude of gravity acceleration time domain signals
+tBodyAccJerkMagmean | Mean of the magnitude of body acceleration time domain jerk signals
+tBodyGyroMagmean 	| Mean of the magnitude of body angular velocity time domain signals
+tBodyGyroJerkMagmean| Mean of the magnitude of body angular velocity time domain jerk signals
+fBodyAccmeanX 		| Mean of body acceleration frequency domain signal, X axis
+fBodyAccmeanY 		| Mean of body acceleration frequency domain signal, Y axis
+fBodyAccmeanZ 		| Mean of body acceleration frequency domain signal, Z axis
+fBodyAccJerkmeanX 	| Mean of body acceleration frequency domain jerk signal, X axis
+fBodyAccJerkmeanY 	| Mean of body acceleration frequency domain jerk signal, Y axis
+fBodyAccJerkmeanZ 	| Mean of body acceleration frequency domain jerk signal, Z axis
+fBodyGyromeanX 		| Mean of body angular velocity frequency domain signal, X axis
+fBodyGyromeanY 		| Mean of body angular velocity frequency domain signal, Y axis
+fBodyGyromeanZ 		| Mean of body angular velocity frequency domain signal, Z axis
+fBodyAccMagmean		| Mean of the magnitude of body acceleration frequency domain signals
+fBodyAccJerkMagmean	| Mean of the magnitude of body acceleration frequency domain jerk signals
+fBodyGyroMagmean	| Mean of the magnitude of body angular velocity frequency domain signals
+fBodyGyroJerkMagmean| Mean of the magnitude of body angular velocity frequency domain jerk signals
+tBodyAccstdX		| Standard deviation of body acceleration time domain signal, X axis
+tBodyAccstdY		| Standard deviation of body acceleration time domain signal, Y axis
+tBodyAccstdZ		| Standard deviation of body acceleration time domain signal, Z axis
+tGravityAccstdX		| Standard deviation of gravity acceleration time domain signal, X axis
+tGravityAccstdY		| Standard deviation of gravity acceleration time domain signal, Y axis
+tGravityAccstdZ		| Standard deviation of gravity acceleration time domain signal, Z axis
+tBodyAccJerkstdX	| Standard deviation of body acceleration time domain jerk signal, X axis
+tBodyAccJerkstdY	| Standard deviation of body acceleration time domain jerk signal, Y axis
+tBodyAccJerkstdZ	| Standard deviation of body acceleration time domain jerk signal, Z axis
+tBodyGyrostdX		| Standard deviation of body angular velocity time domain signal, X axis
+tBodyGyrostdY		| Standard deviation of body angular velocity time domain signal, Y axis
+tBodyGyrostdZ		| Standard deviation of body angular velocity time domain signal, Z axis
+tBodyGyroJerkstdX	| Standard deviation of body angular velocity time domain jerk signal, X axis
+tBodyGyroJerkstdY	| Standard deviation of body angular velocity time domain jerk signal, Y axis
+tBodyGyroJerkstdZ	| Standard deviation of body angular velocity time domain jerk signal, Z axis
+tBodyAccMagstd		| Standard deviation of the magnitude of body acceleration time domain signals
+tGravityAccMagstd	| Standard deviation of the magnitude of gravity acceleration time domain signals
+tBodyAccJerkMagst	| Standard deviation of the magnitude of body acceleration time domain jerk signals
+tBodyGyroMagstd		| Standard deviation of the magnitude of body angular velocity time domain signals
+tBodyGyroJerkMagstd	| Standard deviation of the magnitude of body angular velocity time domain jerk signals
+fBodyAccstdX		| Standard deviation of body acceleration frequency domain signal, X axis
+fBodyAccstdY		| Standard deviation of body acceleration frequency domain signal, Y axis
+fBodyAccstdZ		| Standard deviation of body acceleration frequency domain signal, Z axis
+fBodyAccJerkstdX	| Standard deviation of body acceleration frequency domain jerk signal, X axis
+fBodyAccJerkstdY	| Standard deviation of body acceleration frequency domain jerk signal, Y axis
+fBodyAccJerkstdZ	| Standard deviation of body acceleration frequency domain jerk signal, Z axis
+fBodyGyrostdX		| Standard deviation of body angular velocity frequency domain signal, X axis
+fBodyGyrostdY		| Standard deviation of body angular velocity frequency domain signal, Y axis
+fBodyGyrostdZ		| Standard deviation of body angular velocity frequency domain signal, Z axis
+fBodyAccMagstd		| Standard deviation of the magnitude of body acceleration frequency domain signals
+fBodyAccJerkMagstd	| Standard deviation of the magnitude of body acceleration frequency domain jerk signals
+fBodyGyroMagstd		| Standard deviation of the magnitude of body angular velocity frequency domain signals
+fBodyGyroJerkMagstd	| Standard deviation of the magnitude of body angular velocity frequency domain jerk signals
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
 
 ###Variable 1 (repeat this section for all variables in the dataset)
 Short description of what the variable describes.
