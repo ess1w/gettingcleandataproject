@@ -122,19 +122,16 @@ fBodyGyroMagstd		| Standard deviation of the magnitude of body angular velocity 
 fBodyGyroJerkMagstd	| Standard deviation of the magnitude of body angular velocity frequency domain jerk signals
 
 
-###Variable 1 (repeat this section for all variables in the dataset)
-Short description of what the variable describes.
+###Variable descriptions
+Each value in the tidy data set represents the average of the respective variable for each activity and each subject.
 
-Some information on the variable including:
- - Class of the variable
- - Unique values/levels of the variable
- - Unit of measurement (if no unit of measurement list this as well)
- - In case names follow some schema, describe how entries were constructed (for example time-body-gyroscope-z has 4 levels of descriptors. Describe these 4 levels). 
+####Class of the variable
+Each variable is numeric
 
-(you can easily use Rcode for this, just load the dataset and provide the information directly form the tidy data file)
+####Unit of measurement 
+The values are all averages and therefore have no unit of measurement.
+
 
 ##Sources
-Sources you used if any, otherise leave out.
+Human Activity Recognition Using Smartphones Dataset ReadMe file
 
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
